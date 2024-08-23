@@ -88,4 +88,49 @@ section {
   .new-item-entry form button {
     font-size: 1.5rem;
   }
+}
+
+.list-container {
+  min-height: 60vh;
+  padding: 0.75rem;
+}
+.list-container .list-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.list-container .list-title button {
+  font-size: 1rem;
+  background-color: #9f6060;
+  padding: 0 0.1rem;
+  margin-bottom: 0.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .list-container .list-title button {
+    padding: 0 0.5rem;
+  }
+}
+.list-container .list-title hr {
+  width: 100%;
+}
+.list-container .item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 1rem;
+}
+.list-container .item input[type=checkbox] {
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  min-width: 48px;
+  min-height: 48px;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+.list-container .item input[type=checkbox]:focus + label {
+  text-decoration: underline;
+}
+.list-container .item label {
+  font-size: 1.1rem;
 }/*# sourceMappingURL=style.css.map */
